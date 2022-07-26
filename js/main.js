@@ -7,11 +7,6 @@ document.querySelector(".choice").addEventListener("keyup", (event)=>{
 let ingredients = document.querySelector(".ingredients")
 async function getFetch() {
   ingredients.innerText=""
-  document.querySelector(".directions").innerHTML = ""
-  document.querySelector(".directions1").innerHTML = ""
-  document.querySelector(".ingredients1").innerHTML = ""
-  document.querySelector("h2").innerHTML=""
-  picture.classList.add("hide")
   
   let drink = document.querySelector('.choice').value
   let url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${drink}`
@@ -50,6 +45,10 @@ async function getFetch() {
       picture.classList.remove("hide")
     }catch(err){
             document.querySelector("h2").innerHTML="No Drinks Found"
+            document.querySelector(".directions").innerHTML = ""
+            document.querySelector(".directions1").innerHTML = ""
+            document.querySelector(".ingredients1").innerHTML = ""
+            picture.classList.add("hide")
 
       console.log(`error ${err}`)
     }
