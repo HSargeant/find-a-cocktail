@@ -15,8 +15,6 @@ async function getFetch() {
       const response = await fetch(url)
   
       const data = await response.json()
-
-      console.log(data)
      
       document.querySelector(".directions1").innerHTML = "Directions:"
       document.querySelector(".ingredients1").innerHTML = "Ingredients:"
@@ -40,7 +38,6 @@ async function getFetch() {
         }
       }
       document.querySelector(".ingredients1").classList.remove("hide")
-      console.log( document.querySelector(".ingredients1").classList)
       document.querySelector(".directions1").classList.remove("hide")
       picture.classList.remove("hide")
     }catch(err){
