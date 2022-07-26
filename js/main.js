@@ -1,5 +1,3 @@
-
-
 const picture = document.querySelector("#cocktailImg")
 document.querySelector(".submit").addEventListener("click", getFetch)
 document.querySelector(".choice").addEventListener("keyup", (event)=>{
@@ -13,7 +11,7 @@ async function getFetch() {
   document.querySelector(".directions1").innerHTML = ""
   document.querySelector(".ingredients1").innerHTML = ""
   document.querySelector("h2").innerHTML=""
-  picture.src=""
+  picture.classList.add("hide")
   
   let drink = document.querySelector('.choice').value
   let url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${drink}`
@@ -49,9 +47,9 @@ async function getFetch() {
       document.querySelector(".ingredients1").classList.remove("hide")
       console.log( document.querySelector(".ingredients1").classList)
       document.querySelector(".directions1").classList.remove("hide")
-      document.querySelector("img").classList.remove("hide")
+      picture.classList.remove("hide")
     }catch(err){
-            document.querySelector("h2").innerHTML="No drinks found"
+            document.querySelector("h2").innerHTML="No Drinks Found"
 
       console.log(`error ${err}`)
     }
