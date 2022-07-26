@@ -9,7 +9,6 @@
     font-size: 1rem;
   }
 
-  
   body {
     background-color: rgb(222, 221, 184);
     font-family: 'Roboto', arial,sans-serif;
@@ -31,10 +30,7 @@
   }
 
   img{
-    /* text-align: center; */
-    /* margin: 0 auto; */
     width: 40%;
-    /* height: 400px; */
     padding: 0 0 25px 0;
   }
 
@@ -58,10 +54,6 @@
     margin: 0;
     font-size: 3rem; 
     padding-bottom: 10px;
-  }
-  
-
-  h4{
   }
 
  .choice{
@@ -130,19 +122,14 @@ footer a{
 footer.light a{
   color:#333;
 }
-
-
-
-@media (max-width: 500px){
+@media (max-width: 700px){
   .ingredients{
     display: grid;
     grid-template-columns: 1fr;
     font-size: 0.9em;
   }
-
   .howTo{
     text-align: center;
-    /* padding: 15px 10px 10px 10px; */
     margin: 0 auto;
     width: 75%;
     
@@ -173,5 +160,4 @@ footer.light a{
     width: auto;
     text-align: center;
     }
-
 }
