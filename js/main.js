@@ -7,6 +7,7 @@ document.querySelector(".choice").addEventListener("keyup", (event)=>{
 let ingredients = document.querySelector(".ingredients")
 async function getFetch() {
   ingredients.innerText=""
+  // document.querySelector(".directions").innerHTML = ""
   
   let drink = document.querySelector('.choice').value
   let url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${drink}`

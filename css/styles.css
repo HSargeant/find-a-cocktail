@@ -84,7 +84,7 @@ input[type="submit"]:hover{
 
 .ingredients{
   padding:10px 0;
-
+  font-size: 1.1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -115,13 +115,19 @@ footer{
   padding: 25px 0 ;
   width:100%;
   text-align: center;
+  font-size: 1.1em;
 }
 footer a{
   margin-right: 1em;
 }
-footer.light a{
+footer a{
   color:#333;
 }
+footer a:visited{
+  color:rgba(51, 51, 51, 0.909);
+}
+footer a:hover{
+font-size: 1.0625em;}
 @media (max-width: 700px){
   .ingredients{
     display: grid;
