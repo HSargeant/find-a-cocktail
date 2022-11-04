@@ -135,10 +135,16 @@ font-size: 1.0625em;}
     font-size: 0.9em;
   }
   .howTo{
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
     width: 75%;
     
+  }
+  .howTo p{
+    text-align: left;
+  }
+  .howTo h3{
+    text-align: center;
   }
   input[type="text"] {
 

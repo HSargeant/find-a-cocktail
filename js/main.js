@@ -17,8 +17,8 @@ async function getFetch() {
   
       const data = await response.json()
      
-      document.querySelector(".directions1").innerHTML = "Directions:"
-      document.querySelector(".ingredients1").innerHTML = "Ingredients:"
+      document.querySelector(".directions1").innerHTML = "Directions"
+      document.querySelector(".ingredients1").innerHTML = "Ingredients"
       let randomSelection = Math.floor(Math.random()*data.drinks.length)
       document.querySelector("h2").innerHTML=data.drinks[randomSelection].strDrink
       document.querySelector("img").src=data.drinks[randomSelection].strDrinkThumb
