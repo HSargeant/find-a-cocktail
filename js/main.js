@@ -9,7 +9,7 @@ async function getFetch() {
   ingredients.innerText=""
   // document.querySelector(".directions").innerHTML = ""
   
-  let drink = document.querySelector('.choice').value
+  let drink = document.querySelector('.choice').value.trim()
   let url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${drink}`
     try{
    
